@@ -1,0 +1,76 @@
+{
+    "id": "get_web_page_content_scraped_by_firecrawl",
+    "code": "# Your JS code here",
+    "uuid": "b38ae8fa-bfab-4b2c-9e0a-a96e1c3c0f90",
+    "emoji": "🧩",
+    "title": "Firecrawl Web Page Reader",
+    "iconURL": "https://raw.githubusercontent.com/mendableai/firecrawl/main/img/firecrawl_logo.png",
+    "disabled": false,
+    "httpAction": {
+        "id": "1e7ff958-19dc-4b28-9789-b83544f37695",
+        "url": "https://api.firecrawl.dev/v1/scrape",
+        "name": "",
+        "method": "POST",
+        "hasBody": true,
+        "hasHeaders": true,
+        "requestBody": "{\n    \"url\": \"{pageUrl}\",\n    \"formats\": [\n        \"{responseFormat}\"\n    ],\n    \"onlyMainContent\": {onlyMainContent}\n}",
+        "requestHeaders": "{\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Bearer {firecrawlApiKey}\"\n}",
+        "requestBodyFormat": "json"
+    },
+    "openaiSpec": {
+        "name": "get_web_page_content_scraped_by_firecrawl",
+        "parameters": {
+            "type": "object",
+            "required": [
+                "pageUrl"
+            ],
+            "properties": {
+                "pageUrl": {
+                    "type": "string",
+                    "description": "The URL of the web page to scrape for content."
+                }
+            }
+        },
+        "description": "Retrieves the content of a web page by scraping it using the Firecrawl API"
+    },
+    "outputType": "respond_to_ai",
+    "oauthConfig": null,
+    "userSettings": [
+        {
+            "name": "firecrawlApiKey",
+            "label": "Firecrawl API Key",
+            "required": true,
+            "description": "Enter your Firecrawl API key. You can create one at https://www.firecrawl.dev/app/api-keys"
+        },
+        {
+            "name": "onlyMainContent",
+            "type": "enum",
+            "label": "Only Main Content",
+            "values": [
+                "true",
+                "false"
+            ],
+            "description": "Indicates whether to scrape only the main content. Optional, default value is true.",
+            "defaultValue": "true"
+        },
+        {
+            "name": "responseFormat",
+            "type": "enum",
+            "label": "Response Format",
+            "values": [
+                "markdown",
+                "html",
+                "rawHtml",
+                "links",
+                "screenshot",
+                "extract",
+                "screenshot@fullPage"
+            ],
+            "description": "Specifies the format of the response from Firecrawl. Optional, default value is markdown.",
+            "defaultValue": "markdown"
+        }
+    ],
+    "overviewMarkdown": "# Firecrawl Web Page Reader\n\nThis plugin allows users to read and analyze a web page by scraping its content using the [Firecrawl Scrape API](https://docs.firecrawl.dev/api-reference/endpoint/scrape).\n\n👉 **Get started with the Firecrawl Scrape API:**  \n- API Documentation: https://docs.firecrawl.dev/api-reference\n\n🔑 **Set up your Firecrawl API Key and Authenticate:**  \n- Firecrawl API requires an API key for access. Learn more at https://www.firecrawl.dev/app/api-keys\n- Update the plugin's user settings:\n  - **Firecrawl API Key:** `fc-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`  \n\n## ❗ Important Notes\n\n### Rate Limits\nThere are rate limits for API requests depending on different pricing plans. Learn more at https://docs.firecrawl.dev/rate-limits.\n\n### Pricing Plans\nFirecrawl offers various subscription types. Make sure to review the available features and limitations in your current plan. See more details at https://www.firecrawl.dev/pricing.\n\n## Example Usage\n> Please summarize the content from this article https://www.theverge.com/2024/10/23/24277609/tesla-earnings-q3-2024-net-income-margin-sales",
+    "authenticationType": "AUTH_TYPE_NONE",
+    "implementationType": "http"
+}
