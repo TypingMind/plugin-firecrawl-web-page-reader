@@ -4,7 +4,7 @@
     "uuid": "b38ae8fa-bfab-4b2c-9e0a-a96e1c3c0f90",
     "emoji": "🧩",
     "title": "Read Web Page",
-    "iconURL": "https://raw.githubusercontent.com/mendableai/firecrawl/main/img/firecrawl_logo.png",
+    "iconURL": "https://raw.githubusercontent.com/TypingMind/plugin-firecrawl-web-page-reader/refs/heads/main/icon.png",
     "disabled": false,
     "httpAction": {
         "id": "1e7ff958-19dc-4b28-9789-b83544f37695",
