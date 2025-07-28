@@ -1,4 +1,4 @@
-# Firecrawl Web Page Reader
+# Read Web Page - Firecrawl API
 
 This plugin allows users to read and analyze a web page by scraping its content using the [Firecrawl Scrape API](https://docs.firecrawl.dev/api-reference/endpoint/scrape).
 
