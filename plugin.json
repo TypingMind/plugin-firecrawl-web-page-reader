@@ -3,7 +3,7 @@
     "code": "# Your JS code here",
     "uuid": "b38ae8fa-bfab-4b2c-9e0a-a96e1c3c0f90",
     "emoji": "🧩",
-    "title": "Firecrawl Web Page Reader",
+    "title": "Read Web Page",
     "iconURL": "https://raw.githubusercontent.com/mendableai/firecrawl/main/img/firecrawl_logo.png",
     "disabled": false,
     "httpAction": {
@@ -31,7 +31,7 @@
                 }
             }
         },
-        "description": "Retrieves the content of a web page by scraping it using the Firecrawl API"
+        "description": "Retrieves the text content of a web page in markdown format by scraping it using the Firecrawl API"
     },
     "outputType": "respond_to_ai",
     "oauthConfig": null,
