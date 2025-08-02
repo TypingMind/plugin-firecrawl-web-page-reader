@@ -3,7 +3,7 @@
     "code": "# Your JS code here",
     "uuid": "b38ae8fa-bfab-4b2c-9e0a-a96e1c3c0f90",
     "emoji": "🧩",
-    "title": "Read Web Page",
+    "title": "Read Web Page (Firecrawl)",
     "iconURL": "https://raw.githubusercontent.com/TypingMind/plugin-firecrawl-web-page-reader/refs/heads/main/icon.png",
     "disabled": false,
     "httpAction": {
