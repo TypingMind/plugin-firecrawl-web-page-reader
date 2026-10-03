@@ -38,6 +38,7 @@
     "userSettings": [
         {
             "name": "firecrawlApiKey",
+            "type": "password",
             "label": "Firecrawl API Key",
             "required": true,
             "description": "Enter your Firecrawl API key. You can create one at https://www.firecrawl.dev/app/api-keys"
