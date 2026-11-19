@@ -8,12 +8,12 @@
     "disabled": false,
     "httpAction": {
         "id": "1e7ff958-19dc-4b28-9789-b83544f37695",
-        "url": "https://api.firecrawl.dev/v1/scrape",
+        "url": "https://api.firecrawl.dev/v2/scrape",
         "name": "",
         "method": "POST",
         "hasBody": true,
         "hasHeaders": true,
-        "requestBody": "{\n    \"url\": \"{pageUrl}\",\n    \"formats\": [\n        \"{responseFormat}\"\n    ],\n    \"onlyMainContent\": {onlyMainContent}\n}",
+        "requestBody": "{\n    \"url\": \"{pageUrl}\",\n    \"formats\": [\n        \"{responseFormat}\"\n    ],\n    \"onlyMainContent\": {onlyMainContent},\n    \"maxAge\": 0\n}",
         "requestHeaders": "{\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Bearer {firecrawlApiKey}\"\n}",
         "requestBodyFormat": "json"
     },
@@ -63,9 +63,7 @@
                 "html",
                 "rawHtml",
                 "links",
-                "screenshot",
-                "extract",
-                "screenshot@fullPage"
+                "screenshot"
             ],
             "description": "Specifies the format of the response from Firecrawl. Optional, default value is markdown.",
             "defaultValue": "markdown"
